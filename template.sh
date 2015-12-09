@@ -26,8 +26,8 @@ cat > $APP_NAME.json <<EOF
         "timeoutSeconds": 10,
         "maxConsecutiveFailures": 2
     }],
-    "ports": [0],
-    "cpus": 0.25,
+    "ports": [3000],
+    "cpus": 0.5,
     "mem": 256.0
 }
 EOF
