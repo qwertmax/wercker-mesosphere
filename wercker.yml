@@ -1,0 +1,14 @@
+box: golang
+# Build definition
+build:
+  # The steps that will be executed on build
+  steps:
+    - script:
+        name: go build 
+        code: go build ./...
+    - script:
+        name: copy binary
+        code: |
+          # copy neccessary files to ready for deployment 
+          cp source $WERCKER_OUTPUT_DIR/app
+          cp template.sh $WERCKER_OUTPUT_DIR
