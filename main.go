@@ -13,7 +13,7 @@ func CityHandler(res http.ResponseWriter, req *http.Request) {
 	res.Write(data)
 }
 
-// try to deploy test 14
+// try to deploy test 15
 func main() {
 	http.HandleFunc("/", CityHandler)
 	http.HandleFunc("/cities.json", CityHandler)
